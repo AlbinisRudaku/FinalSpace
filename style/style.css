@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("../style/characters/characters.css");
+@import url("../style/episodes/episodes.css");
+@import url("../style/locations/locations.css");
+@import url("../style/quotes/quotes.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  width: 1500px;
+  max-width: 90%;
+  margin: auto;
+}
+
+section {
+  height: 100vh;
+  background-image: url("../img/gary+mooncake.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section .cover-bg {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section .cover-bg nav {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .cover-bg nav .logo {
+  width: 40%;
+}
+
+section .cover-bg nav .logo a img {
+  width: 200px;
+}
+
+section .cover-bg nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .cover-bg nav ul li {
+  list-style: none;
+}
+
+section .cover-bg nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 5px;
+  position: relative;
+}
+
+section .cover-bg nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 5px;
+  background-color: #A8FE7F;
+  bottom: -5px;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section .cover-bg nav ul li a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+section .cover-bg .canvas {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+section .cover-bg .canvas canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+section .cover-bg .canvas h1 {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 700;
+  color: #A8FE7F;
+  margin-top: 100px;
+  margin-left: 200px;
+  z-index: 2;
+}
+/*# sourceMappingURL=style.css.map */
